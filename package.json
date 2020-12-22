@@ -1,0 +1,15 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "ToDo App Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "DBugErr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
