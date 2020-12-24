@@ -11,6 +11,14 @@ body{
     background-color: rgb(255, 255, 255);
     color: rgb(65, 63, 63);
 }
+
+@media (orientation: portrait)
+{
+    .main{
+        width: 100%;
+    }
+}
+
 input[type="text"]::placeholder {  
                    
     text-align: center; 
@@ -154,6 +162,7 @@ button:hover{
 .container{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 5vh;
 }
 
 .task{
@@ -164,6 +173,8 @@ button:hover{
     flex-wrap: wrap;
     height: 10vh;
     border-top: 2px solid rgba(128, 128, 128, 0.267);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.267);
+
 }
 .info{
     padding-top: 2vh;
@@ -232,6 +243,12 @@ button:hover{
 
 .Important{
     background-color: rgb(221, 92, 92);
+    border-radius: 10px;
+    
+}
+
+.Other{
+    background-color: rgb(158, 158, 158);
     border-radius: 10px;
     
 }
