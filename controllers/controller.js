@@ -1,6 +1,8 @@
 const Task = require("../models/tasks");
-module.exports.home = function(req,res) {
 
+//Rendering HomePage
+module.exports.home = function(req,res) {
+    //Finding all Elements in Database
     Task.find({} , function(err,tasks){
         if(err)
         {
@@ -28,7 +30,10 @@ module.exports.home = function(req,res) {
     
 }
 
+//Adding Task and Refreshing Page
 module.exports.newtask = function(req, res){
+
+    //Creating Databse entry
     Task.create(
         {
             description: req.body.description,
@@ -45,7 +50,11 @@ module.exports.newtask = function(req, res){
     )
 };
 
+
+//Deleting Task and removing
+
 module.exports.deletetask = function(req, res){
+    //Removing From Database
     Task.findByIdAndDelete(req.query.id, function(err){
         if(err)
         {
