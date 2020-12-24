@@ -1,0 +1,237 @@
+body{
+    background-color: rgb(46, 44, 44);
+    margin: 0px;
+}
+
+.main{
+    width: 50%;
+    margin:auto;
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(65, 63, 63);
+}
+input[type="text"]::placeholder {  
+                   
+    text-align: center; 
+} 
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 25vh;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    color: rgb(65, 63, 63);
+}
+option {
+    font-weight: 500;
+    color: rgb(65, 63, 63);
+    text-align: center;
+}
+.description-input-container
+{
+    width: 100%;
+}
+.description-input-container label
+{
+    position: relative;
+    top: 3vh;
+}
+.description-input-container input
+{
+    height: 8vh;
+    width: 100%;
+    border: rgba(121, 117, 117, 0.199) 1.5px solid;
+    border-left: none;
+    border-right: none;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.description-input-container input::placeholder
+{
+    position: relative;
+    left: -1vw;
+}
+
+.description-input-container input:focus
+{
+    width: 100%;
+    background-color: rgb(226, 219, 219);
+    border-radius: 10px;
+    outline:none;
+}
+
+.category-input-container
+{
+    width: 50%;
+}
+
+.category-input-container label
+{
+    position: relative;
+    top: -1vh;
+    z-index: 1;
+}
+
+.category-input-container select
+{
+    height: 8vh;
+    position: relative;
+    top: -4.7vh;
+    width: 100%;
+    border: rgba(121, 117, 117, 0.247) 1.5px solid;
+    border-left: none;
+    padding-left: 0;
+    padding-top: 3vh;
+    text-align: center;
+    text-align-last: center;
+}
+
+.category-input-container select:focus
+{
+    background-color: rgb(226, 219, 219);
+    border-radius: 10px;
+    outline:none;
+    padding-left: 30%;
+    text-align: left;
+    text-align-last: left;
+}
+
+.deadline-input-container
+{
+    width: 50%;
+}
+
+.deadline-input-container label
+{
+    position: relative;
+    top: -1vh;
+    z-index: 1;
+}
+
+.deadline-input-container input
+{
+    height: 8vh;
+    position: relative;
+    top: -4.7vh;
+    width: 100%;
+    border: rgba(121, 117, 117, 0.295) 1.5px solid;
+    border-right: none;
+    border-left: none;
+
+    padding-left: 35%;
+    padding-top: 3vh;
+}
+
+.deadline-input-container input:focus
+{
+    width: 100%;
+    background-color: rgb(226, 219, 219);
+    border-radius: 10px;
+    outline:none;
+}
+
+button{
+    position: relative;
+    top: -2.5vh;
+    height: 45px;
+    color: white;
+    background-color: rgb(49, 49, 49);
+    box-shadow: none;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(17, 17, 17);
+    box-shadow: none;
+    border: none;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task{
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+    border-top: 2px solid rgba(128, 128, 128, 0.267);
+}
+.info{
+    padding-top: 2vh;
+    width:75%;
+    text-align: left;
+}
+.description{
+    font-weight: 700;
+    font-size: large;
+    padding-left: 4vh;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    width:15%;
+    height: 70%;
+    margin: 5px 0px 5px 0px;
+    color: white;
+}
+
+.deadline{
+    padding-top: 1vh;
+    padding-left: 6vh;
+}
+
+.delete-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10%;
+    text-align: center;
+}
+
+.delete-button a{
+    color: red;
+    padding: 5px;
+}
+
+
+.delete-button a:hover{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+.Work{
+    background-color: royalblue;
+    border-radius: 10px;
+}
+
+.Personal{
+    background-color: rgb(99, 218, 99);
+    border-radius: 10px;
+}
+
+.Official{
+    background-color: rgb(170, 172, 73);
+    border-radius: 10px;
+}
+
+.Important{
+    background-color: rgb(221, 92, 92);
+    border-radius: 10px;
+    
+}
